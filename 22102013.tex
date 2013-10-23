@@ -1,37 +1,53 @@
-\documentclass[article,a4paper]{memoir}
+\documentclass[article,a4paper,oneside,12pt]{memoir}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{datetime}
+\longdate
+
+\title{\textbf{An Briathar} \\ \large An Ch\'{e}ad R\'{e}imniú}
+\author{Sigmund Vestergaard}
+\date{\today}
+
+
+\makepagestyle{cnag}
+\makeevenhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+\makeoddhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+%\pagestyle{cnag}
+
+\OnehalfSpacing
 
 \begin{document}
 
-\chapter*{An Ch\'{e}ad R\'{e}imniú}
+\maketitle
 
-\begin{enumerate}[{\bfseries 1}]
-	\item 	\begin{enumerate}[{\bfseries a)}]
-			\item Gach Satharn tógann Máire an páip\'{e}ar agus
+\chapter*{1}
+\subsection*{Aimsir Láithreach}
+Gach Satharn tógann Máire an páip\'{e}ar agus
 				l\'{e}ann sí \'{e}. Dúnann sí \'{e} ansin. 					Ritheann sí
 				isteach sa chistin agus ólann sí cupán tae.
 				Glanann sí an chistin. Briseann sí cupán.
 				Scríobhann sí litir chuig a haintín.
 				F\'{e}achann sí ar an teilifís as feadh
 				tamaill.
-			\item An Satharn seo chugainn tógfaidh Máire an
+
+\subsection*{Aimsir Fháistineach}
+An Satharn seo chugainn tógfaidh Máire an
 				páip\'{e}ar agus l\'{e}ifidh sí \'{e}. Dúnfaidh
 				sí \'{e} ansin. Rithfidh sí isteach sa chistin 					agus
 				ólfaidh sí cupán tae. Glanfaidh sí an chistin.
 				Brisfidh sí cupán. Scríobhfaidh sí litir chuig
 				a haintín. F\'{e}achfaidh sí ar an teilifís ar
 				feadh tamaill.
-		\end{enumerate}
-	\item   \begin{enumerate}[{\bfseries a)}]
-			\item An Luan seo caite rith Liam go dtí an siopa chun
+
+\chapter*{2}
+\subsection*{Aimsir Chaite}
+An Luan seo caite rith Liam go dtí an siopa chun
 				an páip\'{e}ar a fháil. L\'{e}igh s\'{e} an
 			      páip\'{e}ar sa bhaile. Scríobh s\'{e} litir chuig a uncail agus d'ól s\'{e} gloine líomanáide. Thóg s\'{e} leabhar ansin agus l\'{e}igh s\'{e} \'{e} ar feadh tamaill. Dhún s\'{e} an leabhart tar \'{e}is tamaill agus ghlan s\'{e} an chistin. D'fh\'{e}ach s\'{e} ar an teilifís ansin.
-			    \item An Luan seo chugainn ritfidh Liam go dtí an siopa chun an páip\'{e}ar a fháil. L\'{e}ifidh s\'{e} an páip\'{e}ar sa bhaile. Scríobhfaidh s\'{e} litir chuig a uncail agus ólfaidh s\'{e} gloine líomanáide. Tógfaidh s\'{e} leabhar ansin agus l\'{e}ifidh s\'{e} \'{e} ar deadh tamaill. Dúnfaidh s\'{e} an leabhar tar \'{e}is tamaill agus glanfaidh s\'{e} an chistin. F\'{e}achfaidh s\'{e} ar an teilifís ansin.
-		\end{enumerate}
-\end{enumerate}
 
+\subsection*{Aimsir Fháistineach}
+An Luan seo chugainn ritfidh Liam go dtí an siopa chun an páip\'{e}ar a fháil. L\'{e}ifidh s\'{e} an páip\'{e}ar sa bhaile. Scríobhfaidh s\'{e} litir chuig a uncail agus ólfaidh s\'{e} gloine líomanáide. Tógfaidh s\'{e} leabhar ansin agus l\'{e}ifidh s\'{e} \'{e} ar feadh tamaill. Dúnfaidh s\'{e} an leabhar tar \'{e}is tamaill agus glanfaidh s\'{e} an chistin. F\'{e}achfaidh s\'{e} ar an teilifís ansin.
 
 
 \end{document}
