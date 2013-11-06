@@ -1,0 +1,31 @@
+\documentclass[article,a4paper,oneside,12pt]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\longdate
+
+\title{\textbf{Caitheamh Aimsire}}
+\author{Sigmund Vestergaard}
+\date{\today}
+
+
+\makepagestyle{cnag}
+\makeevenhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+\makeoddhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+%\pagestyle{cnag}
+
+\OnehalfSpacing
+
+\begin{document}
+
+\maketitle
+
+Gach Satharn agus gach Domhnach taitníonn feicim sacar ar teilifís go maith
+liom. Gach lá l\'{e}im san oíche sula bheith i mo chodladh. Anois is arís
+taitnin le mo chara ag siúl liom. Is mó caithim aimsire amháin teangacha
+foghlaim. Gach C\'{e}adaoin t\'{e}im go dtí an rang Gaeilge. Gach Aoine is
+fearr liom fanaim istigh feicim cláracha teilifíse. Gach Nollag taistilím do dtí
+an India, agus caithim aimsir mo chailín le ch\'{e}ile.
+
+\end{document}
