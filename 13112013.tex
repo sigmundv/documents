@@ -1,0 +1,41 @@
+\documentclass[article,a4paper,oneside,12pt]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\longdate
+
+\title{{ \bfseries Tosaíochtaí }}
+\author{Sigmund Vestergaard}
+\date{\today}
+
+
+\makepagestyle{cnag}
+\makeevenhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+\makeoddhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+%\pagestyle{cnag}
+
+\OnehalfSpacing
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+  \item Is breá liom iasc.
+  \item Tá iasc níos folláine ná cáca milis.
+  \item Is maith liom iasc choipthe.
+  \item Is maith liom sacar ag f\'{e}achaint.
+  \item Ithim feoil go minic.
+  \item Ithim bia te i gcomhar lóin gach lá oibre, nach D\'{e} Sathairn is 
+    	D\'{e} Domhnaigh ithim arán (i gcomhar lóin).
+  \item Is uaineoil thirim an bia is fearr liom.
+  \item Is maith liom Gaeilge; sílim go bhfuil sí teanga go hálainn.
+  \item Is cumann sacar Manchester United is fearr liom.
+  \item Is breá liom matamaitic. Bhí matamaitic ábhar l\'{e}inn is fearr liom 
+    	ar scoil is colaiste.
+  \item Is maith liom ríomhchlárú, agus Python teanga ríomhchláraithe is fearr 
+    	liom.
+\end{enumerate}
+
+\end{document}
