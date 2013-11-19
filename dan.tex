@@ -1,0 +1,38 @@
+\documentclass[article,a4paper,oneside,12pt]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\longdate
+
+\title{{ \bfseries Dán }}
+\author{Sigmund Vestergaard}
+\date{\today}
+
+
+\makepagestyle{cnag}
+\makeevenhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+\makeoddhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
+%\pagestyle{cnag}
+
+\OnehalfSpacing
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+  \item An raibh tú sa bhaile inn\'{e}?
+  \item An ndeachaigh tú go dtí an scoil?
+  \item Ar tháinig tú ar ais arís?
+  \item An ndearna tú r\'{e}idh cupán tae?
+  \item Ar thug tú do mo mháthair \'{e}?
+  \item An bhfuair tú ceapaire?
+  \item Ar d'ith tú \'{e}?
+  \item Ar chuala tú torann amuigh?
+  \item An bhfaca tú fear ag an doras?
+  \item Ar rug tú greim air?
+  \item An ndúirt tú leis ``imigh leat''?
+\end{enumerate}
+
+\end{document}
