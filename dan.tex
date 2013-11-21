@@ -9,6 +9,10 @@
 \author{Sigmund Vestergaard}
 \date{\today}
 
+\newcommand\ceist[2]{\fbox{#1} tú #2?}
+\newcommand\freagrai[3]{
+  \begin{tabular}{l}\fbox{#1} m\'{e} #3.\\\fbox{#2 } m\'{e} #3.\end{tabular}
+}
 
 \makepagestyle{cnag}
 \makeevenhead{cnag}{\thedate}{\theauthor}{Page~\thepage~of~\thelastpage}
@@ -19,20 +23,29 @@
 
 \begin{document}
 
-\maketitle
-
-\begin{enumerate}
-  \item An raibh tú sa bhaile inn\'{e}?
-  \item An ndeachaigh tú go dtí an scoil?
-  \item Ar tháinig tú ar ais arís?
-  \item An ndearna tú r\'{e}idh cupán tae?
-  \item Ar thug tú do mo mháthair \'{e}?
-  \item An bhfuair tú ceapaire?
-  \item Ar d'ith tú \'{e}?
-  \item Ar chuala tú torann amuigh?
-  \item An bhfaca tú fear ag an doras?
-  \item Ar rug tú greim air?
-  \item An ndúirt tú leis ``imigh leat''?
-\end{enumerate}
+\begin{tabular}{rll}
+  \ceist{An raibh}{sa bhaile inn\'{e}}&
+  \freagrai{Bhí}{Ní raibh}{sa bhaile inn\'{e}}\\\\
+  \ceist{An ndeachaigh}{go dtí an scoil}&
+  \freagrai{Chuaigh}{Ní dheachaidh}{go dtí an scoil}\\\\
+  \ceist{Ar tháinig}{ar ais arís}&
+  \freagrai{Tháinig}{Níor tháinig}{ar ais arís}\\\\
+  \ceist{An ndearna}{r\'{e}idh cupán tae}&
+  \freagrai{Rinne}{Ní dhearna}{r\'{e}idh cupán tae}\\\\
+  \ceist{Ar thug}{do do mháthair \'{e}}&
+  \freagrai{Thug}{Níor thug}{do mo mháthair \'{e}}\\\\
+  \ceist{An bhfuair}{ceapaire}&
+  \freagrai{Fuair}{Ní bhfuair}{ceapaire}\\\\
+  \ceist{Ar ith}{\'{e}}&
+  \freagrai{D'ith}{Níor ith}{\'{e}}\\\\
+  \ceist{Ar chuala}{torann amuigh}&
+  \freagrai{Chuala}{Níor chuala}{torann amuigh}\\\\
+  \ceist{An bhfaca}{fear ag an doras}&
+  \freagrai{Chonaic}{Ní fhaca}{fear ag an doras}\\\\
+  \ceist{Ar rug}{greim air}&
+  \freagrai{Rug}{Níor rug}{greim air}\\\\
+  \ceist{An ndúirt}{leis ``imigh leat''}&
+  \freagrai{Dúirt}{Ní dúirt}{leis ``imigh leat''}
+\end{tabular}
 
 \end{document}
